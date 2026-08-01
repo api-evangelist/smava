@@ -1,7 +1,24 @@
 aid: smava
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/smava.png
 name: Smava
-description: 'Smava is a company surfaced as a portfolio company of earlybird and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Smava (smava GmbH) is a Berlin-based German consumer-finance marketplace, founded in 2007, that
+  lets borrowers compare personal, auto, and mortgage loan offers from more than 20 partner banks for amounts
+  ranging from EUR 1,000 to EUR 120,000, without impacting their SCHUFA credit score. The company operates a
+  digital, data-driven loan-brokerage platform serving consumers across Germany and employs roughly 600 people.
+  It was added to the API Evangelist network as a portfolio company of Earlybird. As of this enrichment pass
+  Smava is a consumer (B2C) web and mobile-app business and publishes no public developer API, developer portal,
+  OpenAPI specification, or well-known API discovery endpoints.'
 url: https://raw.githubusercontent.com/api-evangelist/smava/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +28,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Lending
+- Loan Comparison
+- Consumer Finance
+- Marketplace
+- Germany
 apis: []
+common:
+- type: DomainSecurity
+  url: security/smava-domain-security.yml
+- type: Website
+  url: https://www.smava.de/
+- type: GitHubOrganization
+  url: https://github.com/smava
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
